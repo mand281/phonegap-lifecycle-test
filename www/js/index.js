@@ -14,30 +14,38 @@ function updateDisplay() {
 
 // device APIs are available
 //
-    function onDeviceReady() {
+   
+
+//lifecycle event Device Ready
+function onDeviceReady() {
 	
 	document.addEventListener("resume", onResume, false);
+	    //event listener defined
 	document.addEventListener("pause", onPause, false);
-	
+	    //event listener defined
 	launched_count++;
+	    //increment count by 1
 	updateDisplay();
 	    
 	alert("device ready");
     }
 
 
+//lifecycle event Pause
     function onPause() {
 	
 	paused_count++;
+	    //increment count by 1
 	updateDisplay();
 	    
 	alert("pause");
     }
 	
-
+//lifecycle event Resume
     function onResume() {
 		
 	resumed_count++;
+	    //increment count by 1
 	updateDisplay();
 	    
 	alert("resume");
