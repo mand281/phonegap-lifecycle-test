@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Application Lifecycle Test</title>
+    <title>Storing and retrieb=ving data</title>
 
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
 	<script src="jquery-mobile/jquery-1.8.3.min.js" type="text/javascript"></script>
@@ -11,11 +11,22 @@
 </head>
 
 <body>
-  
-  	<h1>Event counts</h1>
-	<div id="launched"></div>
-	<div id="paused"></div>
-	<div id="resumed"></div>
+  window.localStorage.setItem (
+	  "phone", "2";
+	  "pen", "blue";
+	  "bag", "yellow";
+	  "cup", "coffee";
+	  "coat", "black"
+	  );
+var key = "coat";
+var value = window.localStorage.getItem(key);
 
+console.log(key, value);
+
+
+
+
+
+	
 </body>
 </html>
