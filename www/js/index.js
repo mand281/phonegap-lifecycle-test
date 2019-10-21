@@ -38,7 +38,7 @@ function onDeviceReady() {
 	    //increment count by 1
 	updateDisplay();
 	    
-	alert("pause");
+	alert("resume");
     }
 	
 //lifecycle event Resume
@@ -48,5 +48,5 @@ function onDeviceReady() {
 	    //increment count by 1
 	updateDisplay();
 	    
-	alert("resume");
+	alert("pause");
     }
