@@ -20,9 +20,9 @@ function updateDisplay() {
 function onDeviceReady() {
 	
 	document.addEventListener("resume", onResume, false);
-	    //event listener defined
+	    //resume event listener defined
 	document.addEventListener("pause", onPause, false);
-	    //event listener defined
+	    //pause event listener defined
 	launched_count++;
 	    //increment count by 1
 	updateDisplay();
@@ -38,7 +38,8 @@ function onDeviceReady() {
 	    //increment count by 1
 	updateDisplay();
 	    
-	alert("resume");
+        alert("pause");
+        //changed resume to pause
     }
 	
 //lifecycle event Resume
@@ -48,5 +49,6 @@ function onDeviceReady() {
 	    //increment count by 1
 	updateDisplay();
 	    
-	alert("pause");
+        alert("resume");
+        //changed pause to resume
     }
